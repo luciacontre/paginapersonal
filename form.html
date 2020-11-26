@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <nav>
+        <ul>
+            <li style="float: left;"><a href="index.html">Remote Experience</a></li>
+        </ul>
+     </nav>
+</head>
+<body>
+    <h2>¿Qué piensas tú?</h2>
+
+<p>Despacito y desde el sofá responde a este cuestionario. 
+    <br> ¿Cómo de feliz serías trabajando en remoto?
+</p>
+<!-- debo crear una action page? Mis respuestas? -->
+<form action="/action_page.php">
+
+ <label for="fname">¿Cómo te llamas?</label><br>
+ <input type="text" id="fname" name="fname"><br><br>
+
+  <label for="lugar"> Elige tu lugar favorito de la casa para trabajar en remoto:</label>
+  <select id="_lugar" name="lugar">
+    <option value="cocina">Cocina</option>
+    <option value="habitación">Habitación</option>
+    <option value="salon">Salón</option>
+    <option value="baño">Baño</option>
+  </select>
+
+  <p>¿Tienes que estar sólo en tu espacio para concentrarte? </p>
+  <input type="checkbox" id="_seguro" name="seguro" value="_seguro">
+  <label for="seguro"> Seguro, no podría concentrarme.</label><br>
+  <input type="checkbox" id="_noproblem" name="noproblem" value="_noproblem">
+  <label for="noproblem">No tengo problema, es indiferente si hay alguien.</label><br>
+  <input type="checkbox" id="_solitario" name="solitario" value="_solitario">
+  <label for="solitario"> No, necesito movimiento a mi alrededor.</label><br><br>
+
+  <p>Selecciona los imprescindibles para estar en tu salsa, digo casa.
+      <br>Puedes seleccionar múltiples opciones.
+  </p>
+  <label for="cosas">Necesito tener siempre:</label>
+  <select id="_cosas" name="cosas" size="5" multiple>
+    <option value="café">Café</option>
+    <option value="sillaComoda">Silla Cómoda</option>
+    <option value="audifonos">Audífonos</option>
+    <option value="gato">Mi gato</option>
+    <option value="notas">Bloc de notas</option>
+  </select><br><br>
+
+
+  <p>¿Serías capaz de desconectar del trabajo estando en casa?
+      <br>Desplega para ver las opciones
+  </p>
+  <input list="_desconectar" name="desconexion">
+  <datalist id="_desconectar">
+    <option value="Sería muy dificil">
+    <option value="Que va, desconecto rápido">
+    <option value="Estaría todo el día enganchado cual friki">
+    <option value="No estoy seguro">
+ </datalist>
+
+ <p> ¿ Crees que podrías pasar por este calvario? </p>
+   <button class="button1">Obvio</button>
+   <button class="button2">Jamás</button>
+<br>
+   <p> Pues suerte y bienvenido al maravilloso mundo de los niños remoto.</p>
+
+
+<br>
+  <input type="submit">
+</form>
+    
+</body>
+</html>
