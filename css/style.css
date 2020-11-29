@@ -3,14 +3,14 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(8, 92, 53);
+    background-color: rgb(55, 139, 100);
     width: 100%;
     top: 0%;
   }
   
   li {
     float: right;
-    border-right:1px solid #bbb;
+    border: right;
   }
   
   li:last-child {
@@ -18,7 +18,7 @@ ul {
   }
   
   li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -34,26 +34,45 @@ ul {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    text-align: center;
+    font-size: 30px;
   }
   
   .flex-container > section {
     background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
+    width: 47%;
+    padding: 10%;
+    margin: 5%;
     text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    align-items:flex-end
+    flex-wrap: wrap;
+    position: relative;
+    border: 0px;
+    
   }
   
   
   img{
      max-width: 100%;
      height: auto;
-
+     width:flex;
+     position: relative;;
+     flex:100%
   }
 
-  .relative {
+  .flex-container>section>img{
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    left:0px;
+}
+  .flex-container>section>h6{
+    text-align: justify;
+    color:rgb(16, 22, 10);
+    margin-top: 0%;
+    padding: 0px;
+  }
+
+    .relative {
     position: relative;
     width: 400px;
     height: 200px;
@@ -69,10 +88,4 @@ ul {
     
   }
 
- .flex-container>h6
- {
-  color: rgb(85, 21, 21);
-  padding: 14px 20px;
-  text-decoration:aliceblue;
-  text-align:center;
- }
+ 
